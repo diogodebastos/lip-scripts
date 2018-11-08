@@ -3,6 +3,13 @@ export LABEL=ProdNov8
 
 source /cvmfs/cms.cern.ch/crab3/crab.sh
 
+TTx_array=(
+"crab_TTHad_pow_${LABEL}"
+"crab_TTJets_${LABEL}"
+"crab_TTLep_pow_${LABEL}"
+"crab_TTSemi_pow_${LABEL}"
+)
+
 QCD_en_array=(
 "crab_QCD_Pt1000toInf_Mu5_${LABEL}"
 "crab_QCD_Pt120to170_EMEnriched_${LABEL}"
@@ -144,7 +151,7 @@ array=(
 "crab_ZJetsToNuNu_HT2500toInf_${LABEL}"
 )
 
-for i in "${QCD_en_array[@]}"; do
+for i in "${TTx_array[@]}"; do
     echo -e "\nStatus of \033[0;31m$i\033[0m"
     crab status --dir="$i"/"${i/${LABEL}}"${DATA}${LABEL}
 done
