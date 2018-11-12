@@ -123,8 +123,8 @@ other_array=(
 )
 
 FullSimSignal_array=(
-"crab_SMS_T2_4bd_genMET_80_mStop_500_mLSP_420_Fall17${LABEL}"
-"crab_SMS_T2_4bd_genMET_80_mStop_500_mLSP_490_Fall17${LABEL}"
+"crab_SMS_T2_4bd_genMET_80_mStop_500_mLSP_420_${LABEL}"
+"crab_SMS_T2_4bd_genMET_80_mStop_500_mLSP_490_${LABEL}"
 )
 
 array=(
@@ -220,6 +220,6 @@ array=(
 "crab_ZJetsToNuNu_HT800t1200_${LABEL}"
 "crab_ZJetsToNuNu_HT1200to2500_${LABEL}"
 "crab_ZJetsToNuNu_HT2500toInf_${LABEL}"
-"crab_SMS_T2_4bd_genMET_80_mStop_500_mLSP_420_Fall17${LABEL}"
-"crab_SMS_T2_4bd_genMET_80_mStop_500_mLSP_490_Fall17${LABEL}"
+"crab_SMS_T2_4bd_genMET_80_mStop_500_mLSP_420_${LABEL}"
+"crab_SMS_T2_4bd_genMET_80_mStop_500_mLSP_490_${LABEL}"
 )
