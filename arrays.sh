@@ -122,6 +122,11 @@ other_array=(
 "crab_ZZ_${LABEL}"
 )
 
+FullSimSignal_array=(
+"crab_SMS_T2_4bd_genMET_80_mStop_500_mLSP_420_Fall17${LABEL}"
+"crab_SMS_T2_4bd_genMET_80_mStop_500_mLSP_490_Fall17${LABEL}"
+)
+
 array=(
 "crab_DYJetsToLL_M4to50_HT100to200_${LABEL}"
 "crab_DYJetsToLL_M4to50_HT200to400_${LABEL}"
