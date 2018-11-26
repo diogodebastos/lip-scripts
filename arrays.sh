@@ -1,12 +1,13 @@
 #!/bin/bash
 export DATA=Fall17
-export LABEL=ProdNov10
+export LABEL=${LABEL}"
 
 TTx_array=(
 "crab_TTHad_pow_${LABEL}"
 "crab_TTJets_${LABEL}"
 "crab_TTLep_pow_${LABEL}"
 "crab_TTSemi_pow_${LABEL}"
+"crab_TTJets_madgraph_${LABEL}"
 )
 
 WJets_array=(
@@ -15,6 +16,13 @@ WJets_array=(
 "crab_W3JetsToLNu_LO_${LABEL}"
 "crab_W4JetsToLNu_LO_${LABEL}"
 "crab_WJetsToLNu_LO_${LABEL}"
+"crab_WJetsToLNu_HT100To200_${LABEL}"
+"crab_WJetsToLNu_HT200To400_${LABEL}"
+"crab_WJetsToLNu_HT400To600_${LABEL}"
+"crab_WJetsToLNu_HT600To800_${LABEL}"
+"crab_WJetsToLNu_HT800To1200_${LABEL}"
+"crab_WJetsToLNu_HT1200To2500_${LABEL}"
+"crab_WJetsToLNu_HT2500ToInf_${LABEL}"
 )
 
 ZInv_array=(
@@ -126,6 +134,15 @@ FullSimSignal_array=(
 "crab_SMS_T2_4bd_genMET_80_mStop_500_mLSP_420_${LABEL}"
 "crab_SMS_T2_4bd_genMET_80_mStop_500_mLSP_490_${LABEL}"
 )
+
+all_array+=$TTx_array
+all_array+=$WJets_array
+all_array+=$ZInv_array
+all_array+=$QCD_array
+all_array+=$QCD_en_array
+all_array+=$data_array
+all_array+=$DYJets_array
+all_array+=$other_array
 
 array=(
 "crab_DYJetsToLL_M4to50_HT100to200_${LABEL}"
