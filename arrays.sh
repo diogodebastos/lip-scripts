@@ -1,6 +1,6 @@
 #!/bin/bash
 export DATA=Fall17
-export LABEL=${LABEL}"
+export LABEL=ProdNov10
 
 TTx_array=(
 "crab_TTHad_pow_${LABEL}"
@@ -239,4 +239,12 @@ array=(
 "crab_ZJetsToNuNu_HT2500toInf_${LABEL}"
 "crab_SMS_T2_4bd_genMET_80_mStop_500_mLSP_420_${LABEL}"
 "crab_SMS_T2_4bd_genMET_80_mStop_500_mLSP_490_${LABEL}"
+"crab_WJetsToLNu_HT100To200_${LABEL}"
+"crab_WJetsToLNu_HT200To400_${LABEL}"
+"crab_WJetsToLNu_HT400To600_${LABEL}"
+"crab_WJetsToLNu_HT600To800_${LABEL}"
+"crab_WJetsToLNu_HT800To1200_${LABEL}"
+"crab_WJetsToLNu_HT1200To2500_${LABEL}"
+"crab_WJetsToLNu_HT2500ToInf_${LABEL}"
+"crab_TTJets_madgraph_${LABEL}"
 )
