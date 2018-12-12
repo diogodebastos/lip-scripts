@@ -36,8 +36,10 @@ for i in $(seq $INIT_CHUNK 2999); do
  gfal-copy -v srm://srm01.ncg.ingrid.pt:8444/srm/managerv2?SFN=/cmst3/store/user/dchasque/${LABEL}/${SAMPLE}/${SAMPLE_DIR_ext}/${j}/heppyOutput_${i}.tgz /lstore/cms/dbastos/tmp/${SAMPLE}/
  tar zxvfC ${OUTPUT_DIR}/heppyOutput_${i}.tgz ${OUTPUT_DIR}
  mv ${OUTPUT_DIR}/Output ${OUTPUT_DIR}/Chunk${i}
+ # copy only tree.root
  gfal-copy -vprf ${OUTPUT_DIR}/Chunk${i}/treeProducerStop4Body/tree.root srm://srm01.ncg.ingrid.pt:8444/srm/managerv2?SFN=/cmst3/store/user/dchasque/${LABEL}/${SAMPLE}/Chunk${i}/treeProducerStop4Body/tree.root
  rm ${OUTPUT_DIR}/heppyOutput_${i}.tgz
  rm -rf ${OUTPUT_DIR}/Chunk${i}
- ..$gfal-rm -vr srm://srm01.ncg.ingrid.pt:8444/srm/managerv2?SFN=/cmst3/store/user/dchasque/Stop4Body17/Fall17ProdMay9/ProdMay9/${SAMPLE}/${SAMPLE_DIR_ext}
+ # delete tar ball from Tier-3
+ #$gfal-rm -vr srm://srm01.ncg.ingrid.pt:8444/srm/managerv2?SFN=/cmst3/store/user/dchasque/Stop4Body17/Fall17ProdMay9/ProdMay9/${SAMPLE}/${SAMPLE_DIR_ext}
 done
