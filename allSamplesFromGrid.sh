@@ -1,6 +1,11 @@
 #!/bin/bash
 export GSTORE=/gstore/t3cms/store/user/dchasque/Stop4Body17/Fall17ProdNov10/ProdNov10
 
+TEST=(
+"QCD_Pt170to300_Mu5"
+"QCD_HT100to200"
+)
+
 DYJets=(
 "DYJetsToLL_M4to50_HT100to200"
 "DYJetsToLL_M4to50_HT200to400"
